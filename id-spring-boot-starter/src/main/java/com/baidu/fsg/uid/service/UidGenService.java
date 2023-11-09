@@ -1,14 +1,14 @@
 package com.baidu.fsg.uid.service;
 
 import com.baidu.fsg.uid.UidGenerator;
-import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 @Service
 public class UidGenService {
 
-    @Resource
+    @Autowired
     private UidGenerator uidGenerator;
 
     public long getUid() {
